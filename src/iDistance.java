@@ -1,5 +1,6 @@
 
-public interface iDistance 
+
+public interface iDistance
 {
-	public void calculate();	
+	 public double calculate(Data d, Centroid c);
 }

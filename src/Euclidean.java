@@ -1,12 +1,15 @@
 
-public class Euclidean implements iDistance 
+
+
+public class Euclidean implements iDistance
 {
-	iDistance d = new Euclidean();
 
 	@Override
-	public void calculate() 
+	public double calculate(Data d, Centroid c) 
 	{
-		// TODO Auto-generated method stub
+		return Math.sqrt(Math.pow((c.Y() - d.Y()), 2) + Math.pow((c.X() - d.X()), 2));
 		
 	}
+
+
 }
